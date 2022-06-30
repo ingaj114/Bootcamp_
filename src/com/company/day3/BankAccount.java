@@ -1,4 +1,4 @@
-package com.company;
+package com.company.day3;
 
 public class BankAccount {
     private String accountName;
@@ -21,7 +21,7 @@ public class BankAccount {
     public float withdraw(float amount) {
         if (amount > balance) {
             System.out.println("There is not enough funds");
-        } else balance -= amount ;
+        } else balance -= amount;
         return balance;
     }
 
@@ -44,7 +44,7 @@ public class BankAccount {
         inga.withdraw(1000);
         mia.withdraw(200);
 
-        inga.transferMoney(mia,300);
+        inga.transferMoney(mia,2000);
 
         inga.printBalance();
         mia.printBalance();
