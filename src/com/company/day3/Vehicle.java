@@ -12,15 +12,18 @@ public class Vehicle {
     int speed = 0;
     int gear = 0;
 
-    public void steering() {
-        System.out.println("The steering is on!");
+    public void steering(boolean steering) {
+        if (steering == true) {
+            System.out.println("The steering is on!");
+        } else System.out.println("Car is not started! The steering is off.");
     }
+
     public void changeGearUp() {
         if (gear >= 6) {
             System.out.println("You are in gear 6 already");
         } else gear++;
 
-        System.out.println("You are in gear" + gear);
+        System.out.println("You are in gear " + gear);
     }
 
     public void changeGearDown() {
@@ -29,7 +32,7 @@ public class Vehicle {
         } else if (gear == 1) {
             System.out.println("You have first gear already");
         } else  gear--;
-        System.out.println("You are in gear" + gear);
+        System.out.println("You are in gear " + gear);
     }
 
     public void driveOn() {
